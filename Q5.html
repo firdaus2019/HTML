@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            form{
+                max-width:600px;
+                margin: auto;
+                padding: 20px;
+                border:0ch1px solid #acc;
+                border-radius:5px;
+                background-color: #f9f9f9;
+            }
+            input[type="text"],
+            input[type="email"],
+            select{
+                width: 100;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #acc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="radio"]
+            input[type="checkbox"]{
+                margin-right: 5px;
+            }
+            input[type="submit"],
+            input[type="reset"]{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius:4px;
+                cursor: pointer;
+                float: right;
+            }
+            input[type="submit"]:hover,
+            input[type="reset"]: hover{
+                background-color: #45a049;
+            }
+        </style>
+        <title>Pizza Order Form</title>
+    </head>
+    <body>
+        <h2><center>Pizaa Shop 2.0</center>/h2>
+            <form action="order.php" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="topping">Pizza Topping:</label><br>
+                <select id="topping" name="topping">
+                    <option value="supreme">Supreme</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Hawalian">Hawalian></option>
+                </select><br><br>
+
+                <label for="sauce">Pizza Sauce:</label><br>
+                <input type="radio" id="tomato" name="sauce" value="Tomato" checked>
+                <label for="tomato">Tomato</label><br><br>
+                <label for="extras">Optional Extras:</label><br>
+                <input type="checkbox" id="cheese" name="extras[]" value="Extra Cheese">
+                <label for="cheese">Extra Cheese</label><br>
+                <input type="checkbox" id="gluten-free" name="extras[]" value="Gluten Free Base">
+                <label for="gluten-free">Gluten Free Base</label><br><br>
+            </table>
+            <label for="delivery">Delivery Instructions:</label><br>
+            <textarea id="delivery" name="delivery" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Send my Order">
+            </form>
+    </body>
+</html>

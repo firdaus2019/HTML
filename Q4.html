@@ -1,0 +1,87 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acaemic information Form</title>
+        <style>
+            body{
+                font-family:Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            form{
+                max-width: 600px;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #acc;
+                border-radius: 5px;
+                background-color: #f9f9f9;
+            }
+            input[ type="text"],
+            input[type="email"],
+            select{
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border: 1px solid #acc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            input[type="radio"],
+            input[type="checkbox"]{
+                margin-right: 5px;
+            }
+            input[type="submit"],
+            input[type="reset"]{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+            input[type="submit"]:hover,
+            input[type="reset"]:hover{
+                background-color: #45a049;
+            }      
+        </style>
+    </head>
+    <body>
+<form action="#" method=" post">
+    <fieldset>
+        <legend><h2>Academic Information</h2></legend>
+        <label for="degree">Degree:</label>&nbsp<input type="text" id="degree" name="degree"
+    <label for="student_id">Student ID:</label>
+
+    Classes attended
+    <Select id="class">
+        <option value="geography">geography</option>
+        <option value="mathematics">mathematics</option>
+        <option value="english">english</option>
+    </Select>
+    </fieldset>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name" placeholder=""><br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" placeholder=""><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder=""><br>
+    </fieldset>
+    <fieldset>
+        <legend>TERM AND CONDITIONS.......</legend>
+    <br>   
+    </fieldset>
+    <input type="submit" value="Send Form">
+    <input type="reset" value="Clear Form">
+</form> 
+</body>
+</html>
